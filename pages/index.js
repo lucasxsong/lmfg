@@ -13,7 +13,12 @@ export default function Home() {
             </Head>
 
             <main>
-                <div className="bg-orange-600 flex flex-column w-100">
+                <div className="title">
+                    <center>
+                        <div className="title">
+                            <b>L...M...F...G... </b>
+                        </div>
+                    </center>
                     {600 > 500 ? (
                         <div className="bg-orange-900 w-100 h-auto">
                             <div>
@@ -21,8 +26,8 @@ export default function Home() {
 
                                 <img
                                     src="/desktop-garden.jpg"
-                                    width="full"
-                                    height="400"
+                                    width="400"
+                                    height="auto"
                                     object-fit="fill"
                                 />
                             </div>
@@ -36,38 +41,47 @@ export default function Home() {
                             />
                         </div>
                     )}
-                    <center>
-                        <div className="text-2xl"><b>
-                           L...M...F...G... </b></div>
-                        <ul>
-                            <li>
-                                <a href="https://blog.lmfg.org">blog</a>
-                            </li>
-                            <li>
-                                <a href="https://store.lmfg.org">
-                                    store (under construction)
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://lmfg.org">
-                                   ... 
-                                </a>
-                            </li>
-                        </ul>
-                    </center>
+                    <ul>
+                        <li>
+                            <a href="https://blog.lmfg.org">blog</a>
+                        </li>
+                        <li>
+                            <a href="https://garden.lmfg.org">
+                                what's growing in the garden? (under
+                                construction)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://store.lmfg.org">
+                                general store (under construction ... opening
+                                nov 2023)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://lmfg.org">...</a>
+                        </li>
+                    </ul>
                 </div>
             </main>
 
             <style jsx>{`
+
+                body {
+                    background-color #cc7722;
+                }
                 main {
-                    padding: 5rem 0;
+                    padding: 2rem 0;
                     flex: 1;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    background-color: #CC7722;
+                    background-color: #cc7722;
                     width: full;
+                }
+                main title {
+                    text-size: 16px;
+                    font-weight: bold;
                 }
                 footer {
                     width: 100%;
@@ -77,8 +91,8 @@ export default function Home() {
                     justify-content: center;
                     align-items: center;
                 }
-                footer img {
-                    margin-left: 0.5rem;
+                main img {
+                    margin: 1.5rem;
                 }
                 footer a {
                     display: flex;
