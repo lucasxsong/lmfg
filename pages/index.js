@@ -13,24 +13,23 @@ export default function Home() {
             </Head>
 
             <main>
-                <div className="title">
-                    <center>
-                        <div className="title">
-                            <b>L...M...F...G... </b>
+                <div className={styles.grid}>
+                    <div className={styles.title}>
+                        L.M.F.G.
+                        <div className={styles.description}>
+                            let me freaking garden!
                         </div>
-                    </center>
+                    </div>
                     {600 > 500 ? (
                         <div className="bg-orange-900 w-100 h-auto">
-                            <div>
-                                {/* <div className="text-3xl">Welcome to L.M.F.G Webquarters.</div> */}
+                            {/* <div className="text-3xl">Welcome to L.M.F.G Webquarters.</div> */}
 
-                                <img
-                                    src="/desktop-garden.jpg"
-                                    width="400"
-                                    height="auto"
-                                    object-fit="fill"
-                                />
-                            </div>
+                            <img
+                                src="/desktop-garden.jpg"
+                                width="400"
+                                height="auto"
+                                object-fit="fill"
+                            />
                         </div>
                     ) : (
                         <div>
@@ -41,43 +40,40 @@ export default function Home() {
                             />
                         </div>
                     )}
-                    <ul>
-                        <li>
-                            <a href="https://blog.lmfg.org">blog</a>
-                        </li>
-                        <li>
-                            <a href="https://garden.lmfg.org">
-                                what's growing in the garden? (under
-                                construction)
+                    <div className={styles.grid}>
+                        <a className={styles.card}
+                                href="https://garden.lmfg.org"
+                        >
+                            <h3>
+                               the Garden 
+                            </h3>
                             </a>
-                        </li>
-                        <li>
-                            <a href="https://store.lmfg.org">
-                                general store (under construction ... opening
-                                nov 2023)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://lmfg.org">...</a>
-                        </li>
-                    </ul>
+                        <a
+                            className={styles.card}
+                            href="https://wutevr.lmfg.org"
+                        >
+                            <h3>W.U.T.E.V.R</h3>
+                            <p> Written Under The Everso Vibrant Redwood</p>
+                        </a>
+                        <a
+                            className={styles.card}
+                            href="https://store.lmfg.org"
+                        >
+                            <h3> General Store</h3>
+                            <p> under construction</p>
+                        </a>
+                    </div>
                 </div>
             </main>
 
             <style jsx>{`
-
-                body {
-                    background-color #cc7722;
-                }
                 main {
-                    padding: 2rem 0;
                     flex: 1;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    background-color: #cc7722;
-                    width: full;
+                    width: 100%;
                 }
                 main title {
                     text-size: 16px;
@@ -90,9 +86,6 @@ export default function Home() {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                }
-                main img {
-                    margin: 1.5rem;
                 }
                 footer a {
                     display: flex;
