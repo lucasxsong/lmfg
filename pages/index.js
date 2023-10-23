@@ -15,10 +15,23 @@ export default function Home() {
             <main>
                 <div className={styles.grid}>
                     <div className={styles.title}>
-                        L.M.F.G.
-                        <div className={styles.description}>
-                            let me freaking garden!
+                        <div>
+                            <a href="/lucas-manufacturing">L.MFG</a>
                         </div>
+                        <div>
+                            <div>
+                                <a href="/little-mission-free-garden">
+                                    L.M.F.G
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/let-me-fkn-garden">
+                                    L.M.F**.G
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className={styles.description}></div>
                     </div>
                     {600 > 500 ? (
                         <div className="bg-orange-900 w-100 h-auto">
@@ -26,7 +39,7 @@ export default function Home() {
 
                             <img
                                 src="/desktop-garden.jpg"
-                                width="400"
+                                width="200"
                                 height="auto"
                                 object-fit="fill"
                             />
@@ -41,12 +54,15 @@ export default function Home() {
                         </div>
                     )}
                     <div className={styles.grid}>
-                        <a className={styles.card}
+                        {/* <a className={styles.card}
                                 href="https://garden.lmfg.org"
                         >
                             <h3>
                                the Garden 
                             </h3>
+                            <p>
+                                what we're sowing and growing
+                            </p>
                             </a>
                         <a
                             className={styles.card}
@@ -61,7 +77,7 @@ export default function Home() {
                         >
                             <h3> General Store</h3>
                             <p> under construction</p>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </main>
