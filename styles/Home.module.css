@@ -90,6 +90,16 @@
     background-color: #f3a712;
 }
 
+.bleep {
+    background-color: brown;
+    color: brown;
+}
+
+.bleep:hover {
+    background-color: none;
+    color: orange;
+}
+
 @media (max-width: 600px) {
     .grid {
         width: 100%;
